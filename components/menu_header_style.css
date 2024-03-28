@@ -1,0 +1,70 @@
+.menu {
+	font-family: Lato, sans-serif;
+	font-weight: normal;
+	font-size: 15px;
+	word-spacing:  180px;
+	padding-left: 300px;
+	padding: 0% 10%;
+
+}
+
+@media screen and (max-width: 768px){
+	.menu{
+		padding: 10px;
+	}
+	.menu ul{
+		display: none;
+	}
+	.show-menu ul{
+		display: block;
+	}
+	.menu .menu-toggle{
+		display: block;
+	}
+	.menu-toggle{
+		font-size: 28px;
+		cursor: pointer;
+	}
+	
+}
+
+
+.menu-toggle{
+	display: none;
+}
+
+/*opcoes do menu não estão aparecendo*/
+.show-menu{
+	display: block;
+	width: 200px; /* Defina a largura desejada */
+    background-color: rgb(167, 0, 0); /* Cor de fundo do menu */
+    border: 2px solid #000; /* Borda do menu */
+}
+
+
+
+.sombra_menu{
+	background-color: #10111a3d;
+	width: 100%;
+	height: 10px;
+	margin-top: -65px;
+	filter: blur(1px); /* Adjust the blur radius as needed */
+
+
+}
+
+
+.menu ul{
+	list-style: none;
+}
+
+
+.menu ul a{
+	text-decoration: none;
+	font-size: 18px;
+}
+
+.menu ul a:hover{
+	color: #ff4041;
+	/*na questao no nome preto na pagina atual que a pessoa está eu posso alterar para o preto no link de cada pagina deixando o link das demais paginas cinza, para a pessoa saber em que sessão do site ela está*/
+}

@@ -1,0 +1,75 @@
+
+.welcome_text{
+    padding-left: 300px;
+    font-family: Lato, sans-serif;
+	font-size: 4vw;
+	padding: 4% 10%;
+
+
+
+}
+
+
+
+.welcome_text_description{
+	padding: 0% 10%;
+	padding-right: 20%;
+	font-family: Lato, sans-serif;
+	font-size: 15px;
+	color: #6b6b6b;
+
+}
+
+.square-button{
+	display: inline-block;
+	padding: 10px 20px;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	text-decoration: none;
+	font-size: large;
+	border: 2px solid #ff4041;
+	color: #ffffff;
+	background-color: #ff4041;
+	border-radius: 2px;
+	transition: transform 0.3s;
+	position: absolute;
+	left: 10%;
+	top: calc(14% + 30vw + 20px);
+}
+
+
+
+.vertical_line{
+    width: 2px;
+    height: 30vw;
+    background-color: #ff4041;
+    position: absolute;
+    top: 14%;
+    right: 20%;
+	border-radius: 2px;
+
+    
+}
+
+
+
+.square-button:hover{
+	transform: scale(1.1);
+}
+
+
+
+
+#whatsappWelcome {
+	height: 58px;
+	width: 58px;
+    transition: transform 0.3s;
+	position: absolute;
+    top: calc(14% + 30vw + 20px); 
+    right: calc(20% - 29px); 
+}
+
+#whatsappWelcome:hover{
+	transform: scale(1.1);
+
+}
