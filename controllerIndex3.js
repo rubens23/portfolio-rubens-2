@@ -172,7 +172,13 @@ function openVideo(appElement){
 }
 
 function closeModal(){
+    var videoElement = document.getElementById('appVideo');
+
+    videoElement.pause()
+    videoElement.currentTime = 0;
+
     document.getElementById("videoModal").style.display = "none";
+
 }
 
 window.onclick = function(event){
