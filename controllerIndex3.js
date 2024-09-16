@@ -274,4 +274,3 @@ const appDetailsFeaturesList ={
 
 
 
-//-não esqueça de alterar o cors la no seu backend quando vc fizer deploy disso no github;
