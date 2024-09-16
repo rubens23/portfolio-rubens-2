@@ -1,231 +1,250 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <header>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+            <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+            <link rel="stylesheet" href="./styles3.css"/>
+            <script src="controllerIndex3.js"></script>
 
-<head>
-        <script src="controllerTelaPrincipal.js"></script>
-        
-<header> 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./styles.css"/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+        </header>
+    </head>
+    <body>
+        <button class="openBtn" onclick="openDrawer()">☰</button>
 
-
-
-
-        <title> Home | Portfólio Rubens </title>   
-        
-      
-
-</header>
-
-</head>
-
-
-
-
-<body>
-
-     
-        <div class= "menu">
-                <ul>
-                        <li><a href="#" onclick="scrollToImageList()">PORTFÓLIO</a>
-                        <a href="#" onclick="scrollToContato()">CONTATO</a>
-                </ul> 
-                <div class="menu-toggle"  id="menuToggle">
-                        &#9776;
- 
-                </div>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-
-
+        <div id="myDrawer" class="drawer">
+            <a href="javascript:void(0)" onclick="closeDrawer()">Fechar</a>
+            <a href="#about-me" onclick="closeDrawer()">Sobre mim</a>
+            <a href="#sessao-servicos" onclick="closeDrawer()">Serviços</a>
+            <a href="#orcamento" onclick="closeDrawer()">Orçamento</a>
+            <a href="#entrar-em-contato-comigo" onclick="closeDrawer()">Entre em contato comigo</a>
         </div>
 
 
 
-        <div class="sombra_menu">
+        <div class="container">
+            <div class="header-buttons">
+                <p id="about-me-btn" class="header-buttons sobre-mim-button">Sobre mim</p>
+                <p id="sessao-servicos-btn" class="header-buttons servicos-button">Serviços</p>
+                <p id="orcamento-btn" class="header-buttons orcamento-button">Orçamento</p>
+                <button id="entrar-em-contato-comigo-btn" class="header-buttons entre-em-contato-button">
+                    Entrar em contato comigo!
+                </button>
 
+            </div>
+
+        </div>
+
+        <div id="about-me" class="container-title-portfolio">
+
+            <div class="container-title-portfolio container2">
+            
+                <h1 class="container2 title-portfolio">Olá, eu me chamo<br>Rubens e sou<br>desenvolvedor!</h1>
+                <p class="container2 subtitle-portfolio">Desenvolvo aplicativos para Android e tenho mais de 3 anos de experiência!<br> Aperte no botão abaixo para conhecer<br>melhor o meu trabalho!</p>
+                <button id="btn-ver-portfolio" class="container2 button-see-portfolio">
+                    Ver Portfólio
+                </button>
+    
+            </div>
+    
+            <div class="container-title-portfolio container3">
+                <img class="portfolio-header-img" src="portfolio-header-image.svg" alt="imagem de um menino usando um notebook">
+            </div>
+
+        </div>
+
+        <div id="sessao-servicos" class="container-label-servicos">
+            <div class="container-label-servicos label-servicos">
+                <h2>Serviços</h2>
+            </div>
+            <p class="container-label-servicos subtitle-servicos">Eu ofereço serviços de desenvolvimento de aplicativos móveis.</p>
+        </div>
+
+        <div class="container-apps">
+            <div class="container-apps app-1" onClick="openVideo(this)" data-video="video_dose_certa.mp4">
+                <div class="background-app-name app-name-1-background">
+                    <p class="app-1-name">App Dose Certa</p>
+
+
+                </div>
+                <img class="app-img app-1-img" src="dose-certa-uni.png" alt="imagem do app dose certa">
                 
-        </div>
+            </div>
+            <div class="container-apps app-2" onClick="openVideo(this)" data-video="video_salon_adm.mp4">
+                <div class="background-app-name app-name-2-background">
+                    <p class="app-2-name">App Salon</p>
 
-        <p class="welcome_text">Olá, sou<br>desenvolvedor android</p>
-        <p class="welcome_text_description">Tenho dois anos de experiência, diversos projetos e app publicado play store!</p>
-
-        <a href="#" class="square-button" onclick="scrollToImageList()">Conheça meu trabalho</a>
-
-        <p class="portfolio_text_label">Portfólio</p>
-        <div class="horizontal_line"></div>
-
-
-        <div class="lista-container">
-                <div class="item">
-                        <div class="app_image_container">
-                                <p class="app_thumbnail_title1">Dose Certa</p>
-                                <img src="foto_dose_certa.png" alt="Image 1">
-
-
-                        </div>
-                        <p class="title_list_item1">App Dose Certa</p>
-                        <p class="desc_list_item1">Aplicativo que serve para as pessoas lembrarem dos horários dos medicamentos que elas estão tomando. O aplicativo conta com uma tela de detalhe para cada medicamento onde a pessoa pode ver informações como horários das doses, duração do tratamento, doses já tomadas além de um botão para ativar o alarme de lembrete de medicamentos.</p>
 
                 </div>
-
-                <div class="item">
-                        <div class="app_image_container">
-                                <p class="app_thumbnail_title1">Dose Certa</p>
-                                <img src="foto_dose_certa.png" alt="Image 1">
-
-
-                        </div>
-                        <p class="title_list_item1">App Dose Certa</p>
-                        <p class="desc_list_item1">Aplicativo que serve para as pessoas lembrarem dos horários dos medicamentos que elas estão tomando. O aplicativo conta com uma tela de detalhe para cada medicamento onde a pessoa pode ver informações como horários das doses, duração do tratamento, doses já tomadas além de um botão para ativar o alarme de lembrete de medicamentos.</p>
-
-                </div>
-
-                <div class="item">
-                        <div class="app_image_container">
-                                <p class="app_thumbnail_title1">Dose Certa</p>
-                                <img src="foto_dose_certa.png" alt="Image 1">
-
-
-                        </div>
-                        <p class="title_list_item1">App Dose Certa</p>
-                        <p class="desc_list_item1">Aplicativo que serve para as pessoas lembrarem dos horários dos medicamentos que elas estão tomando. O aplicativo conta com uma tela de detalhe para cada medicamento onde a pessoa pode ver informações como horários das doses, duração do tratamento, doses já tomadas além de um botão para ativar o alarme de lembrete de medicamentos.</p>
-
-                </div>
-
-                <div class="item">
-                        <div class="app_image_container">
-                                <p class="app_thumbnail_title1">Dose Certa</p>
-                                <img src="foto_dose_certa.png" alt="Image 1">
-
-
-                        </div>
-                        <p class="title_list_item1">App Dose Certa</p>
-                        <p class="desc_list_item1">Aplicativo que serve para as pessoas lembrarem dos horários dos medicamentos que elas estão tomando. O aplicativo conta com uma tela de detalhe para cada medicamento onde a pessoa pode ver informações como horários das doses, duração do tratamento, doses já tomadas além de um botão para ativar o alarme de lembrete de medicamentos.</p>
-
-                </div>
-
-                <div class="item">
-                        <div class="app_image_container">
-                                <p class="app_thumbnail_title1">Dose Certa</p>
-                                <img src="foto_dose_certa.png" alt="Image 1">
-
-
-                        </div>
-                        <p class="title_list_item1">App Dose Certa</p>
-                        <p class="desc_list_item1">Aplicativo que serve para as pessoas lembrarem dos horários dos medicamentos que elas estão tomando. O aplicativo conta com uma tela de detalhe para cada medicamento onde a pessoa pode ver informações como horários das doses, duração do tratamento, doses já tomadas além de um botão para ativar o alarme de lembrete de medicamentos.</p>
-
-                </div>
-                
-        </div>
-
-        <!--
-        <ul class="image-list">
-                <li class="image-list-item" onclick="openModal('App Dose Certa', 'Aplicativo que serve para as pessoas lembrarem dos horários dos medicamentos que elas estão tomando. O aplicativo conta com uma tela de detalhe para cada medicamento onde a pessoa pode ver informações como horários das doses, duração do tratamento, doses já tomadas além de um botão para ativar o alarme de lembrete de medicamentos.', 'foto_dose_certa.png')">
-                       
-                        <div class="list_item_desciption_background">
-                                <div class="app_image_container">
-                                        <p class="app_thumbnail_title1">Dose Certa</p>
-                                        <img src="/foto_dose_certa.png" alt="Image 1">
-
-
-                                </div>
-                                <p class="title_list_item1">App Dose Certa</p>
-                                <p class="desc_list_item1">Aplicativo que serve para as pessoas lembrarem dos horários dos medicamentos que elas estão tomando. O aplicativo conta com uma tela de detalhe para cada medicamento onde a pessoa pode ver informações como horários das doses, duração do tratamento, doses já tomadas além de um botão para ativar o alarme de lembrete de medicamentos.</p>
-        
-                        </div>
-                       
-
-                </li>
-                <li class="image-list-item2" onclick="openModal('App Descomplica Mudança', 'DescomplicaMudança é um app essencial para uma transição suave e organizada para o novo lar dos seus sonhos. Com recursos que permitem controlar despesas e receitas mensais, definir metas específicas para cada custo da mudança, e oferecer dicas especializadas de planejamento, o aplicativo coloca você no comando total do planejamento da sua mudança. Acompanhe o progresso, veja quanto já economizou e transforme a mudança em uma jornada tranquila e memorável.', 'foto_ajuda_mudanca.png')">
-                        <div class="list_item_desciption_background2">
-                                <div class="app_image_container2">
-                                        <p class="app_thumbnail_title2">Salon<br> Premium</p>
-                                        <img src="/salaoclient.png" alt="Image 2">
-
-
-                                </div>
-                                <p class="title_list_item2">App Salon Premium</p>
-                                <p class="desc_list_item2">Aplicativo que serve para as pessoas lembrarem dos horários dos medicamentos que elas estão tomando. O aplicativo conta com uma tela de detalhe para cada medicamento onde a pessoa pode ver informações como horários das doses, duração do tratamento, doses já tomadas além de um botão para ativar o alarme de lembrete de medicamentos.</p>
-        
-                        </div>
-
-
-                </li>
-              
-
-        </ul>-->
-
-        <p class="contato_text_label">Contato</p>
-        <p class="email_contato_label">E-mail</p>
-        <p class="email_contato_text">rubens_assis@outlook.com.br</p>
-        <p class="whatsapp_contato_label">Whats App</p>
-        <p class="whatsapp_contato_text">+55 (11) 96142-2254</p>
-        <a href="https://whatsapp.com"><img id="whatsapp_contato" src="/whatsapplogo.png"/></a>
-
-                <div class="modal" id="modal">
-                        <div class="modal-content">
-                            <span class="close" onclick="closeModal()">&times;</span>
-                            <div class="modal-content-container">
-                                <img id="modal-image" src="" alt="Imagem">
-                                <p id="modal-text"></p>
-                                <p id="modal_text_desc"></p>
-
-                            </div>
-                        </div>
-                </div>
-
-
-
-
-
-        
-
-
-        <div class="vertical_line"></div>
-        <a href="https://whatsapp.com"><img id="whatsappWelcome" src="/whatsapplogo.png"/>
-
-                <script>
-                        function scrollToImageList() {
-                          const imageListPosition = document.querySelector('.image-list').offsetTop;
-                    
-                          window.scrollTo({
-                            top: imageListPosition,
-                            behavior: 'smooth' 
-                          });
-                        }
-
-                        function scrollToContato() {
-                          const contatoPosition = document.querySelector('.contato_text_label').offsetTop;
-                    
-                          window.scrollTo({
-                            top: contatoPosition,
-                            behavior: 'smooth' 
-                          });
-                        }
-
-                        function openModal(text, desc, imageUrl) {
-                                document.getElementById('modal-text').innerText = text;
-                                document.getElementById('modal_text_desc').innerText = desc;
-                                document.getElementById('modal-image').src = imageUrl;
-                                document.getElementById('modal').style.display = 'block';
-                                document.body.style.overflow = 'hidden';
-}
-
-                        function closeModal() {
-                                document.getElementById('modal').style.display = 'none';
-                                document.body.style.overflow = 'auto'; 
-                        }
-                      </script>
+                <img class="app-img app-2-img" src="foto_premium_admin.png" alt="imagem do app salon">
                
-</body>
 
 
+            </div>
+            <div class="container-apps app-3" onClick="openVideo(this)" data-video="video_conecta_medicina.mp4">
+                <div class="background-app-name app-name-3-background">
+                    <p class="app-3-name">App Conecta Medicina</p>
 
+
+                </div>
+                <img class="app-img app-3-img" src="conecta-medicina2.png" alt="imagem do app conecta medicina">
+               
+
+
+            </div>
+            <div class="container-apps app-4" onClick="openVideo(this)" data-video="video_descomplica_mudanca.mp4">
+                <div class="background-app-name app-name-4-background">
+                    <p class="app-4-name">App Descomplica Mudança</p>
+
+
+                </div>
+                <img class="app-img app-4-img" src="foto_ajuda_mudanca.png" alt="imagem do app descomplica mudança">
+               
+
+            </div>
+        </div>
+
+        <div id="orcamento" class="container-vamos-fazer-acontecer">
+            <div class="container-vamos-fazer-acontecer vamos-fazer-acontecer-texts">
+                <h2 class="container-vamos-fazer-acontecer vamos-fazer-acontecer-title">Vamos fazer as coisas<br>acontecerem!</h2>
+                <p class="container-vamos-fazer-acontecer vamos-fazer-acontecer-subtitle">Entre em contato hoje para aprender mais sobre meu<br>serviço e tirarmos sua ideia do papel</p>
+                <button id = "btn-entre-em-contato-vamos-fazer-acontecer" class="container-vamos-fazer-acontecer vamos-fazer-acontecer-button">
+                    Entrar em contato
+                </button>
+
+            </div>
+
+            <div class="container-vamos-fazer-acontecer container-img">
+                <img class="container-img fazer-coisas-acontecerem-img" src="increasing.svg" alt="imagem da sessão faça as coisas acontecerem"/>
+
+            </div>
+          
+        </div>
+
+
+        <div id="entrar-em-contato-comigo" class="container-label-em-contato-conosco">
+            <div class="container-label-em-contato-conosco label-entre-em-contato-conosco">
+                <h2>Entre em contato comigo</h2>
+            </div>
+            <p class="container-label-em-contato-conosco subtitle-entre-em-contato-conosco">Conecte-se comigo: Vamos discutir<br>as suas necessidades!</p>
+        </div>
+
+        <div class="container-entre-em-contato-conosco">
+            <div class="container-entre-em-contato-conosco container-form-entre-em-contato-conosco">
+                <form>
+                    <div class="container-form-entre-em-contato-conosco input-group">
+                        <label for="input1">Nome</label>
+                        <input type="text" id="input1" placeholder="Nome">
+                        <label for="input2">Email*</label>
+                        <input type="text" id="input2" placeholder="Email">
+                        <label for="input3">Mensagem*</label>
+                        <textarea id="input3" placeholder="Mensagem" rows="5"></textarea>
+
+                    </div>
+                </form>
+
+                <button class="container-form-entre-em-contato-conosco btn-send-message">
+                    Enviar Mensagem
+                </button>
+                
+
+
+            </div>
+            <div class="container-entre-em-contato-conosco container-img-entre-em-contato-conosco">
+                <img class="container-entre-em-contato-conosco img-entre-em-contato" src="laptop.svg" alt="imagem da sessão entre em contato"/>
+
+            
+            </div>
+        </div>
+
+
+        <div id="id-bottom-contatos" class="bottom-contatos">
+
+            <div class="container-bottom-contatos">
+                <div class="container-label-entre-em-contato-bottom">
+                    <div class="container-label-entre-em-contato-bottom label-entre-em-contato-conosco-bottom">
+                        <h2>Entre em contato comigo: </h2>
+                    </div>
+                    <div class="texts-entre-em-contato-conosco-bottom">
+                        <p class="texts-entre-em-contato-conosco-bottom email-bottom">Email: rubens_assis@outlook.com.br</p>
+                        <p class="texts-entre-em-contato-conosco-bottom phone-bottom">Telefone: +55 (11) 96142-2254 </p>
+    
+    
+                    </div>
+                </div>
+                <div class="social-buttons-container">
+                    <div class="social-buttons">
+                        <a href="https://www.linkedin.com/in/rubens-francisco-125529162/" class="social-button linkedin" target="_blank" aria-label="LinkedIn">
+                            <img class="img-social" src="linkedin.png" alt=""/>
+
+                        </a>
+                        <a href="https://github.com/rubens23" class="social-button github" target="_blank" aria-label="GitHub">
+                            <img class="img-social" src="github.png" alt=""/>
+                        </a>
+                        <a href="https://api.whatsapp.com/send/?phone=%2B5511961422254&text&type=phone_number&app_absent=0" class="social-button whatsapp" target="_blank" aria-label="WhatsApp">
+                            <img class="img-social" src="whatsapp.png" alt=""/>
+                        </a>
+                    </div>
+    
+                </div>
+                
+            </div>
+
+            <div class="bottom-line"></div>
+
+            
+            
+            
+           
+        </div>
+
+
+        <div id="videoModal" class="modal">
+            <div class="modal-content">
+                <div class="top-part">
+                    <div class="app-details-container">
+                        <div class="app-details-button">
+                            <a id="app-detail-button" href="javascript:void(0)" class="app-detail-button" aria-label="show app details">
+                                <img class="img-btn-details-app" src="sinal-de-seta-para-baixo-para-navegar.png" alt=""/>
+    
+                            </a>
+                           
+                        </div>
+        
+                    </div>
+                    <video id="appVideo" controls>
+                        <source id="videoSource" src="" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <span class="close" onclick="closeModal()">&times;</span>
+    
+    
+
+                    
+                </div>
+                            
+                <div class="video-description-container">
+                    <h1 id="videoDescription"></h1>
+                    <p id="app-detail-text"></p>
+                    <p id="app-detail-tecnologias">Principais Tecnologias utilizadas: </p>
+                    <ul id="app-details-list"></ul>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        
+
+      
+           
+
+
+       
+
+    </body>
 </html>
 
-        

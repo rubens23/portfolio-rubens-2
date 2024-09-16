@@ -1,0 +1,29 @@
+/*
+this is the css from the tutorial to learn how
+to position elements using css
+*/
+.parent{
+    background-color: aqua;
+    position: relative;
+
+
+
+}
+
+.child-one{
+    background-color: rgb(116, 255, 116);
+    position: absolute;
+    top: 10px;
+
+
+}
+
+.child-two{
+    background-color: brown;
+
+}
+
+.child-three{
+    background-color: pink;
+
+}

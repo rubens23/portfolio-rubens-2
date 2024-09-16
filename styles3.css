@@ -1,0 +1,870 @@
+
+body{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-buttons{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: 'Space Grotesk', sans-serif;
+    cursor: pointer;
+    margin-right: 60px;
+    
+    
+
+
+}
+
+/*botao sobre mim some quando o layout fica muito pequeno horizontalmente*/
+.sobre-mim-button{
+    
+   
+}
+
+.servicos-button{
+    
+}
+
+.orcamento-button{
+
+}
+
+.entre-em-contato-button{
+    padding-right: 40px;
+    border-radius: 10px;
+    margin-left: 20px;
+    text-align: center;
+    align-items: center;
+    margin-right: 40px;
+
+    
+
+}
+
+.container-title-portfolio{
+    display: flex;
+    align-items: flex-start;
+    margin-right: 40px;
+    margin-left: 40px;
+    align-items: stretch;
+
+
+}
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-family: 'Space Grotesk', sans-serif;
+    flex-grow: 1;
+    flex-basis: 0;
+    max-height: 800px;
+}
+
+.container3 {
+    height: 1800px;
+    width: 400px;
+    margin: auto;
+    flex-grow: 1;
+    flex-basis: 0;
+    max-height: 800px;
+
+}
+
+.portfolio-header-img{
+    height: 100%;
+    width: 100%;
+    
+  
+}
+
+
+.title-portfolio{
+
+    margin-top: 40px;
+    font-size: 60px;
+    width: 100%;
+
+
+    align-self: flex-start;
+    flex-grow: 0;
+}
+
+.subtitle-portfolio{
+    font-size: 20px;
+    width: fit-content;
+    max-height: fit-content;
+    margin-top: 10px;
+
+    align-self: flex-start;
+    flex-grow: 0;
+
+}
+
+.button-see-portfolio{
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    color: white;
+    background-color: #191A23;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 40px;
+    width: fit-content;
+    max-height: fit-content;
+
+    align-self: flex-start;
+    flex-grow: 0;
+    
+   
+
+
+}
+
+.container-label-servicos{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 40px;
+    margin-top: 40px;
+    font-family: 'Space Grotesk', sans-serif;
+    margin-bottom: 40px;
+}
+
+.label-servicos h2{
+    font-size: 20px;
+    color: black;
+}
+
+.label-servicos{
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    padding: 0px 10px;
+    color: white;
+    background-color: #4dd7cc;
+    border: none;
+    width: fit-content;
+    height: fit-content;
+}
+
+.subtitle-servicos{
+    padding-left: 10px;
+    align-self: center;
+}
+
+
+/*sessão de serviços*/
+.container-apps{
+    font-family: 'Space Grotesk', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 40px;
+    padding: 0px;
+    gap: 80px;
+
+
+
+}
+
+.app-1{
+    margin-left: 0px;
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 2px;
+    border-bottom-width: 6px;
+    background-color: #ffffff;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: flex-start;
+    width: calc(50% - 64px);
+    min-width: 400px;
+    
+
+  
+    
+}
+.app-2{
+    margin-left: 0px;
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 2px;
+    border-bottom-width: 6px;
+    background-color: #4dd7cc;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-self: flex-start;
+    width: calc(50% - 64px);
+    min-width: 400px;
+
+    
+
+
+
+
+
+
+
+
+
+
+    
+}
+.app-3{
+    margin-left: 0px;
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 2px;
+    background-color: #191A23;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-start;
+    width: calc(50% - 64px);
+    border-bottom-width: 6px;
+    min-width: 400px;
+
+
+
+    
+
+
+
+
+ 
+    
+}
+.app-4{
+    margin-left: 0px;
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 2px;
+    background-color: #ffffff;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-self: flex-start;
+    width: calc(50% - 64px);
+    border-bottom-width: 6px;
+    min-width: 400px;
+
+
+
+    
+
+
+
+
+  
+    
+}
+
+.app-1-name{
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.app-2-name{
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.app-3-name{
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.app-4-name{
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.background-app-name{
+    padding: 0px 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: #191A23;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    height: fit-content;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    width: fit-content;
+    align-self: center;
+
+}
+
+.app-name-1-background, .app-name-4-background{
+    background-color: #4dd7cc;
+    
+
+}
+
+.app-name-2-background, .app-name-3-background{
+    background-color: #ffffff;
+    
+
+}
+
+.app-img{
+    height: 50%;
+    width: 50%;
+    object-fit: contain;
+    cursor: pointer;
+    align-self: center;
+
+}
+
+
+/* sessão vamos fazer acontecer*/
+.container-vamos-fazer-acontecer{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 40px;
+    margin-top: 40px;
+    font-family: 'Space Grotesk', sans-serif;
+
+}
+
+.vamos-fazer-acontecer-texts{
+    flex-direction: column;
+    width: fit-content;
+
+    
+}
+
+.vamos-fazer-acontecer-title{
+    justify-content: flex-start;
+
+
+}
+
+.vamos-fazer-acontecer-subtitle{
+    flex-grow: 1;
+    
+}
+
+.fazer-coisas-acontecerem-img{
+    height: 400px;
+    width: 400px;
+}
+
+.vamos-fazer-acontecer-button{
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    color: white;
+    background-color: #191A23;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 40px;
+    width: fit-content;
+
+}
+
+.container-label-em-contato-conosco{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 40px;
+    margin-top: 100px;
+    font-family: 'Space Grotesk', sans-serif;
+    margin-bottom: 40px;
+}
+
+.label-entre-em-contato-conosco h2{
+    font-size: 20px;
+    color: black;
+}
+
+.label-entre-em-contato-conosco{
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    padding: 0px 10px;
+    color: white;
+    background-color: #4dd7cc;
+    border: none;
+    width: fit-content;
+    height: fit-content;
+}
+
+.subtitle-entre-em-contato-conosco{
+    padding-left: 10px;
+    align-self: center;
+}
+
+.container-entre-em-contato-conosco{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-top: -20px;
+    font-family: 'Space Grotesk', sans-serif;
+    
+
+
+}
+
+.input-group{
+    margin-bottom: 20px;
+
+}
+
+.input-group label{
+    display: block;
+    margin-bottom: 2px;
+    font-size: 16px;
+    margin-top: 20px;
+    
+}
+
+
+
+
+
+.input-group input[type="text"]::placeholder{
+/*     color: #999;
+ */}
+
+ .container-form-entre-em-contato-conosco{
+    flex-direction: column;
+    font-family: 'Space Grotesk', sans-serif;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+
+
+ }
+
+ .input-group input[type="text"],
+.input-group textarea{
+    width: 80%;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    font-family: 'Space Grotesk', sans-serif;
+    box-sizing: border-box;
+
+}
+
+
+ .btn-send-message{
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    color: white;
+    background-color: #191A23;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 40px;
+    width: 80%;
+ }
+
+ .img-entre-em-contato{
+    height: 400px;
+    width: 400px;
+ }
+
+
+/*sessão de contatos*/
+
+.bottom-contatos{
+    display: flex;
+    flex-direction: column;
+    background-color: #191A23;
+    width: calc(100% - 80px);
+    height: fit-content;
+    margin-top: 80px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 30px 30px 0 0;
+    border-style: solid;
+    border-width: 2px;
+    border: none;
+    padding-bottom: 10px;
+
+
+
+
+}
+
+.container-bottom-contatos{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+
+
+}
+
+.container-label-entre-em-contato-bottom{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 16px;
+    margin-top: 40px;
+    font-family: 'Space Grotesk', sans-serif;
+    margin-bottom: 40px;
+    height: 100%;
+    flex-direction: column;
+}
+
+.container-label-entre-em-contato-bottom h2{
+    font-size: 12px;
+    color: black;
+}
+
+.label-entre-em-contato-conosco-bottom{
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    padding: 0px 10px;
+    color: white;
+    background-color: #4dd7cc;
+    border: none;
+    width: fit-content;
+    height: fit-content;
+}
+
+.texts-entre-em-contato-conosco-bottom{
+    font-size: 23;
+    color: white;
+    margin-left: 6px;
+}
+
+
+.email-bottom{
+    margin: 0;
+
+}
+
+.phone-bottom{
+    margin: 0;
+
+}
+
+.bottom-line{
+    background-color: white;
+    height: 1px;
+    width: calc(100% - 40px);
+    margin-top: 10px;
+    margin-left: 16px;
+    margin-bottom: 20px;
+
+    
+}
+
+.social-buttons-container{
+    margin-right: 16px;
+    height: fit-content;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    font-size: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 16px;
+}
+
+.social-button:hover {
+    background-color: rgba(197, 197, 197, 0.8);
+    color: #fff;
+}
+
+.img-social{
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/*configuração da drawer*/
+
+.drawer{
+    font-family: 'Space Grotesk', sans-serif;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 1000;
+    
+
+
+}
+
+.drawer a{
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+}
+
+.drawer a:hover{
+    background-color: #575757;
+}
+
+.openBtn{
+    display: none;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+}
+
+
+@media screen and (max-width: 900px){
+    .openBtn{
+        display: block;
+        font-size:40px;
+        cursor: pointer;
+        padding: 10px 15px;
+        border: none;
+        opacity: 0;
+        transform: scale(0.5); 
+        animation: fadeInUp 0.5s forwards; 
+    }
+
+    .drawer{
+        display: block;
+      
+    }
+    
+
+    
+
+    .container{
+        display: none;
+    }
+
+    .portfolio-header-img{
+        display: none;
+    }
+
+    .container-img{
+        display: none;
+    }
+
+    .container-img-entre-em-contato-conosco{
+        display: none;
+    }
+
+    .container-title-portfolio{
+        margin-left: 0px;
+    }
+
+
+   
+}
+
+@keyframes fadeInUp{
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/*css do modal do vídeo do app*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh; 
+    background-color: rgba(0, 0, 0, 0.4); 
+
+}
+
+.modal-content {
+    padding: 20px;
+    max-height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+    
+}
+
+.top-part{
+    display: flex;
+}
+
+.modal-content video {
+    max-width: 90vh;
+    max-height: 100vh; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-start; 
+
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+/*botão de mostrar detalhe do app*/
+.app-details-container{
+    height: fit-content;
+    align-self: flex-end;
+    margin-bottom: 26px;
+}
+
+.app-details-button{
+    display: flex;
+}
+
+.app-detail-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    font-size: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.app-detail-button:hover{
+    background-color: rgba(197, 197, 197, 0.8);
+    color: #fff;
+
+}
+
+.img-btn-details-app{
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+
+
+/*detalhes do app*/
+.video-description-container{
+    font-family: 'Space Grotesk', sans-serif;
+
+
+}
+
+#videoDescription {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+#app-detail-text{
+    font-size: 18px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#app-detail-tecnologias{
+    margin-top: 20px;
+    font-size: 18px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+
+#app-details-list{
+    font-size: 18px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
